@@ -5,9 +5,9 @@ Use the literal primitive values rather than creating them with native construct
 ```javascript
 //Don't do this
 var a = new String("abc");
-typeof a \\'object'
+typeof a //'object'
 
 //Do this
 a = "abc"'
-typeof a \\'string'
+typeof a //'string'
 ```
