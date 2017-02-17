@@ -8,6 +8,6 @@ var a = new String("abc");
 typeof a //'object'
 
 //Do this
-a = "abc"'
+a = "abc"
 typeof a //'string'
 ```
