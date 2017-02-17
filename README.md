@@ -1,6 +1,6 @@
 # javascript-tips
 
-Use the literal primitive values rather than creating them with native constructor
+Use the literal syntax rather than creating them with native constructor
 
 ```javascript
 //Don't do this
