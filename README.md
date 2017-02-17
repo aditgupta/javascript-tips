@@ -2,7 +2,7 @@
 
 Use the literal primitive values rather than creating them with native constructor
 
-```javascript
+```Javascript
 \\ Don't do this
 var a = new String("abc");
 
