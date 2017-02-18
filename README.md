@@ -15,3 +15,16 @@ var faultyArray = new Array(1);
 a // 'undefined'
 a.length //1 Whoa! The constructor takes the argument as length rather than an array element
 ```
+###Use the concise form for defining object literal methods and properties
+
+```javascript
+// Object properties
+const foo = {'React', 'AngularJS', 'VueJS'}
+
+//Object methods
+const foo = {
+  atom(){},
+  molecule(){},
+  compound(){}
+ }
+ ```
