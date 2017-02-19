@@ -25,3 +25,8 @@ const foo = {
   compound(){}
  }
  ```
+###JSON.stringify(..) will omit undefined, function and symbol values
+
+```javascript
+JSON.stringify(function(){}); //undefined
+```
