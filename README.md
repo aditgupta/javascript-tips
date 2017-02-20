@@ -34,7 +34,7 @@ JSON.stringify(function(){}); //undefined
 ###Use Strict to avoid errors and declaring variables in global scope
 ```javascript
 (function(){
-  'use strict;
+  'use strict';
   })();
  ```
  
