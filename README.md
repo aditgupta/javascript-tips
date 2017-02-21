@@ -38,3 +38,4 @@ JSON.stringify(function(){}); //undefined
   })();
  ```
  
+ ###Function declarations are hoisted to the top of the function in which they occur.
