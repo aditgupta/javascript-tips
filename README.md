@@ -37,7 +37,6 @@ JSON.stringify(function(){}); //undefined
   'use strict';
   })();
  ```
- 
  ###Function declarations are hosted to the top of the function in which they occur
  ```javascript
  
