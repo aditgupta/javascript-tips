@@ -1,4 +1,5 @@
 # javascript-tips
+The examples given here are for personal learning and have been taken from various sources.
 
 ###Use the literal syntax rather than creating them with constructor form
 
@@ -37,8 +38,44 @@ JSON.stringify(function(){}); //undefined
   'use strict';
   })();
  ```
- ###Function declarations are hosted to the top of the function in which they occur
+###Function declarations are hosted to the top of the function in which they occur
  ```javascript
  
  ```
+###Always keep function declarations at the outermost level of a program or a containing function
+```javascript
+function outside(){return "global";}
+
+function inAndOut(x){
+  function outside(){return "local";}
+  var results = [];
+  if(x){
+    results.push(outside());
+    }
+  results.push(outside());
+  return results;
+  }
+  
+  inAndOut(true); //[local, local]
+  inAndOut(false); //[local]
+  
+  //The correct way
+  function outside(){return "global";}
+  
+  function inAndOut(x){
+    var inside = outside;
+    var results = [];
+    if inside(x){
+      inside = function(){return "local";}
+      results.push(inside());
+      }
+    results.push(inside());  
+    return results;
+    }
+  
+  inAndOut(true) //[local, local]
+  inAndOut(false) //[global]
+  ```
+  
+ 
  
