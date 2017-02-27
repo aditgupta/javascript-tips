@@ -65,7 +65,7 @@ function inAndOut(x){
   function inAndOut(x){
     var inside = outside;
     var results = [];
-    if inside(x){
+    if(x){
       inside = function(){return "local";}
       results.push(inside());
       }
