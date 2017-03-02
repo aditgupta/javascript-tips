@@ -76,6 +76,7 @@ function inAndOut(x){
   inAndOut(true) //[local, local]
   inAndOut(false) //[global]
   ```
-  
+### Functions are hoisted first, then variables
+
  
  
