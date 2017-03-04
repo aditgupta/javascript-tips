@@ -13,8 +13,8 @@ a = "abc"
 typeof a //'string'
 
 var faultyArray = new Array(1);
-a // 'undefined'
-a.length //1 Whoa! The constructor takes the argument as length rather than an array element
+faultyArray // 'undefined'
+faultyArray.length //1 Whoa! The constructor takes the argument as length rather than an array element
 ```
 ###Use the concise form for defining object literal methods
 
@@ -78,5 +78,6 @@ function inAndOut(x){
   ```
 ### Functions are hoisted first, then variables
 
+### *this* is a binding when a function is invoked, and what it references is determined entirely by the call-site where the function is called
  
  
